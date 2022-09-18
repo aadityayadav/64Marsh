@@ -12,11 +12,19 @@
             <li><a href="/home/">Home</a></li>
             <li><a href="/about/">About the Building</a></li>
             <li><a href="/contact/">Contact us</a></li>
-            <li><a href="about.asp">Request Maintaince</a></li>
+            <li><a href="/rmain/">Request Maintaince</a></li>
+            <li><a href="/allmain/">All Maintaince Requests</a></li>
         </ul>
   </head>
 
   <body>
     <%= yield %>
   </body>
+   <footer>
+     &copy;
+    <span id="copyright">
+        <script>document.getElementById('copyright').appendChild(document.createTextNode(new Date().getFullYear()))</script>
+    </span>
+    Aaditya Yadav
+    </footer>
 </html>

@@ -7,4 +7,6 @@ Rails.application.routes.draw do
   get "/home", to: "static#index"
   get "/about", to: "static#about"
   get "/contact", to: "static#contact"
+  get "/rmain/", to: "static#rmain"
+  get "/allmain/", to: "static#allmain"
 end

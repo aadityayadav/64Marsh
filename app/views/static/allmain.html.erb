@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title>
+            Home
+        </title>
+    </head>
+
+<body>
+    <h1>All maintaince requests</h1>
+    <br>
+    <table>
+        <tr>
+            <th>Title</th>
+            <th>Apartment Number</th>
+            <th>Room Number</th>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Contact information</th>
+        </tr>
+        <% @mreqs.each do |mreq|%>
+        <tr>
+            <td><%= mreq.title%></td> 
+            <td><%= mreq.apt_no%></td> 
+            <td><%= mreq.room_no%></td> 
+            <td><%= mreq.name%></td> 
+            <td><%= mreq.description%></td> 
+            <td><%= mreq.contact_info%></td> 
+        </tr>
+        <% end %>
+    </table>
+
+</body>
+
+</html>
+
+

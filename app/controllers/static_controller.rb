@@ -1,4 +1,5 @@
 class StaticController < ApplicationController
-  def index
+  def allmain
+    @mreqs = Mreq.all
   end
 end

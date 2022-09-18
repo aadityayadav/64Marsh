@@ -1,0 +1,2 @@
+class Mreq < ApplicationRecord
+end
